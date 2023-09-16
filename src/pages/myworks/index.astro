@@ -1,0 +1,14 @@
+---
+import Work from "../../components/Work.astro";
+import Navbar from "../../components/Navbar.astro";
+import Layout from "../../layouts/Layout.astro";
+import { getEntry } from "astro:content";
+const myworks = await getEntry("myworks", "works");
+---
+
+<Layout title="My Works">
+  <Navbar />
+  <section class="max-w-[90rem] mt-5 mx-auto">
+    {myworks.data.map((work) => <Work {...work} />)}
+  </section>
+</Layout>

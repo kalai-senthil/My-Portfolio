@@ -1,0 +1,29 @@
+---
+import Hero from "../components/Hero";
+import ThingsMatterMost from "../components/ThingsMatterMost.astro";
+import Navbar from "../components/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import bush from "../assets/bush.svg";
+import grass from "../assets/grass.svg";
+---
+
+<Layout title="Home">
+  <Navbar />
+  <section class="relative">
+    <Image data-ff="10px" class="absolute right-1/2" src={bush} alt="bush" />
+    <Image
+      class="absolute rotate-2 right-3/4 scale-50"
+      src={grass}
+      alt="bush"
+    />
+    <Image
+      class="absolute rotate-12 bottom-0 right-2/3 scale-75"
+      src={grass}
+      alt="bush"
+    />
+    <Image class="absolute ml-10 -rotate-[40deg]" src={grass} alt="grass" />
+    <Hero client:load />
+  </section>
+  <ThingsMatterMost />
+</Layout>

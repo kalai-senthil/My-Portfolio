@@ -1,0 +1,114 @@
+[
+    {
+        "name": "HTML",
+        "link": "mdn",
+        "logo": "../../assets/stuffs/html.svg",
+        "imgDes": "HyperText Markup Langauge",
+        "type": "sm"
+    },
+    {
+        "name": "CSS",
+        "link": "mdn",
+        "logo": "../../assets/stuffs/css.png",
+        "imgDes": "CSS",
+        "type": "xs"
+    },
+    {
+        "name": "Javascript",
+        "link": "mdn",
+        "logo": "../../assets/stuffs/js.png",
+        "imgDes": "JS",
+        "type": "xs"
+    },
+    {
+        "name": "React",
+        "link": "mdn",
+        "logo": "../../assets/stuffs/react.png",
+        "imgDes": "React",
+        "type": "lg"
+    },
+    {
+        "name": "Tailwind",
+        "link": "mdn",
+        "logo": "../../assets/stuffs/tailwind.jpg",
+        "imgDes": "Tailwind",
+        "type": "md"
+    },
+    {
+        "name": "Flutter",
+        "link": "mdn",
+        "logo": "../../assets/stuffs/flutter.png",
+        "imgDes": "Flutter",
+        "type": "sm"
+    },
+    {
+        "name": "Redux",
+        "link": "mdn",
+        "logo": "../../assets/stuffs/redux.png",
+        "imgDes": "Redux",
+        "type": "sm"
+    },
+    {
+        "name": "Python",
+        "link": "mdn",
+        "logo": "../../assets/stuffs/python.webp",
+        "imgDes": "Flutter",
+        "type": "xs"
+    },
+    {
+        "name": "NextJS",
+        "link": "mdn",
+        "logo": "../../assets/stuffs/nextjs.png",
+        "imgDes": "Flutter",
+        "type": "xs"
+    },
+    {
+        "name": "Go",
+        "link": "mdn",
+        "logo": "../../assets/stuffs/go.png",
+        "imgDes": "Flutter",
+        "type": "xs"
+    },
+    {
+        "name": "C++",
+        "link": "mdn",
+        "logo": "../../assets/stuffs/cpp.png",
+        "imgDes": "Flutter",
+        "type": "xs"
+    },
+    {
+        "name": "Express",
+        "link": "mdn",
+        "logo": "../../assets/stuffs/express.png",
+        "imgDes": "Flutter",
+        "type": "xs"
+    },
+    {
+        "name": "Arduino",
+        "link": "mdn",
+        "logo": "../../assets/stuffs/arduino.jpeg",
+        "imgDes": "Flutter",
+        "type": "md"
+    },
+    {
+        "name": "React Native",
+        "link": "mdn",
+        "logo": "../../assets/stuffs/rn.png",
+        "imgDes": "Flutter",
+        "type": "md"
+    },
+    {
+        "name": "NodeJS",
+        "link": "mdn",
+        "logo": "../../assets/stuffs/nodejs.jpeg",
+        "imgDes": "Flutter",
+        "type": "xs"
+    },
+    {
+        "name": "Svelte",
+        "link": "mdn",
+        "logo": "../../assets/stuffs/svelte.png",
+        "imgDes": "Svelte",
+        "type": "xl"
+    }
+]

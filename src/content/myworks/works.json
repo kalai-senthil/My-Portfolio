@@ -1,0 +1,63 @@
+[
+    {
+        "name": "Asking WHY? - Ask and Answer",
+        "link": "https://play.google.com/store/apps/details?id=com.boringtimes.askingwhy",
+        "description": "A place to ask your questions and get answered by the people around you.All scientific inventions made possible by asking the question WHY?..... It makes the world what we live today. Use this app to ask questions and make others happy by answering questions.",
+        "img": "https://play-lh.googleusercontent.com/clMLiVBA4LEvRgSimMOlvAQ4SFeIumd5KdpEk-o6Da0gSpdqmAXWaa00n375qtdxl0A=w1200-h880-rw",
+        "extraInfos": [
+            {
+                "title": "Downloads",
+                "info": "1K+",
+                "icon": "https://api.iconify.design/lucide/download.svg"
+            },
+            {
+                "title": "Rated",
+                "info": "3+",
+                "icon": "https://play-lh.googleusercontent.com/EbEX3AN4FC4pu3lsElAHCiksluOVU8OgkgtWC43-wmm_aHVq2D65FmEM97bPexilUAvlAY5_4ARH8Tb3RxQ=w512-h125-rw"
+            }
+        ]
+    },
+    {
+        "name": "Debating - Decide NOW",
+        "link": "https://play.google.com/store/apps/details?id=com.boringtimes.debating",
+        "description": "The world is full of debates, Come join us on a journey of conversations to make a decision that is suitable for the world and for you. Use this app to convey your thoughts to others and learn through it. Make the world better than yesterday.",
+        "img": "https://play-lh.googleusercontent.com/z7oyv5cU0q8jjDn7tDAdeN2P7f8ECoUnjMOlkI-WNhqAWVEuwL4nXPyl9ruH4IinvUBP=w1200-h880-rw",
+        "extraInfos": [
+            {
+                "title": "Downloads",
+                "info": "1K+",
+                "icon": "https://api.iconify.design/lucide/download.svg"
+            },
+            {
+                "title": "Rated",
+                "info": "12+",
+                "icon": "https://play-lh.googleusercontent.com/yQChfa9XKlaXMIYTk8w8QwChjT8_SH-_2d2SS-kesw0TLQK1nxtw54bDcoZ09freZJgKrtg4f__is-31Vg=w512-h512-rw"
+            }
+        ]
+    },
+    {
+        "name": "Rivet - Community for Alumnis and Students",
+        "link": "https://rivetcommunity.netlify.app/",
+        "description": "The world is full of debates, Come join us on a journey of conversations to make a decision that is suitable for the world and for you. Use this app to convey your thoughts to others and learn through it. Make the world better than yesterday.",
+        "img": "src/assets/works/logo.png",
+        "extraInfos": []
+    },
+    {
+        "name": "Chemin IntelliGB",
+        "link": "https://play.google.com/store/apps/details?id=com.chemin.IntelliGB",
+        "description": "Welcome to the world of intelligent living with the Intelligb Home Automation app, where you can transform your house into a cutting-edge smart home. Control your lights, security, automation and more from the palm of your hand.",
+        "img": "https://play-lh.googleusercontent.com/5OASkMSPMQ_G1ph1-bTx4KtM6ULQNgAVO_e41TJA9aK6Q04724KYvP0rScvnox52g-0=w1200-h480-rw",
+        "extraInfos": [
+            {
+                "title": "Downloads",
+                "info": "5+",
+                "icon": "https://api.iconify.design/lucide/download.svg"
+            },
+            {
+                "title": "Rated",
+                "info": "3+",
+                "icon": "https://play-lh.googleusercontent.com/EbEX3AN4FC4pu3lsElAHCiksluOVU8OgkgtWC43-wmm_aHVq2D65FmEM97bPexilUAvlAY5_4ARH8Tb3RxQ=w512-h125-rw"
+            }
+        ]
+    }
+]

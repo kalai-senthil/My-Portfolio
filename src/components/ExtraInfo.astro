@@ -1,0 +1,14 @@
+---
+import { Image } from "astro:assets";
+import type { ExtraInfo } from "../content/config";
+interface Props extends ExtraInfo {}
+const { icon, info, title } = Astro.props;
+---
+
+<section class="flex gap-2">
+  <Image alt="icon" class="object-contain" src={icon} width={50} height={50} />
+  <div class="">
+    <h4 class="font-semibold text-primary">{title}</h4>
+    <p class="">{info}</p>
+  </div>
+</section>

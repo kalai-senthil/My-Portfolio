@@ -1,0 +1,35 @@
+---
+import { Image } from "astro:assets";
+import ExtraInfo from "./ExtraInfo.astro";
+import type { Work } from "../content/config";
+interface Props extends Work {}
+const { description, img, name, extraInfos, link } = Astro.props;
+---
+
+<section class="flex gap-x-10 my-10 items-center">
+  <Image
+    height={300}
+    class="rounded-full aspect-square object-scale-down shadow-lg"
+    width={300}
+    alt="logo"
+    src={img}
+  />
+  <div class="flex flex-col gap-4">
+    <div class="flex gap-10">
+      <h2 class="font-bold text-4xl">{name}</h2>
+      <a href={link} target="_blank" rel="noopener noreferrer">
+        <Image
+          class="transition-transform rotate-[-90deg] hover:scale-110 cursor-pointer"
+          src="https://api.iconify.design/iconoir/arrow-br.svg"
+          height={50}
+          width={50}
+          alt="link"
+        />
+      </a>
+    </div>
+    <p class="">{description}</p>
+    <section class="flex justify-start gap-10 items-center">
+      {extraInfos.map((info) => <ExtraInfo {...info} />)}
+    </section>
+  </div>
+</section>

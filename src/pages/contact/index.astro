@@ -1,0 +1,49 @@
+---
+import { Image } from "astro:assets";
+import Navbar from "../../components/Navbar.astro";
+import Layout from "../../layouts/Layout.astro";
+import ContactSection from "../../components/ContactSection.astro";
+---
+
+<Layout title="Contact">
+  <Navbar />
+  <main class="max-w-7xl mx-auto mt-10">
+    <section class="grid gap-10 grid-cols-12">
+      <ContactSection
+        alt="Email"
+        name="@me"
+        head="Email"
+        link="mailto:kalaiarasan70810@gmail.com"
+        imgUrl="https://api.iconify.design/logos/google-gmail.svg"
+      />
+      <ContactSection
+        alt="Github"
+        name="@kalai-senthil"
+        head="GitHub"
+        link="https://github.com/kalai-senthil"
+        imgUrl="https://api.iconify.design/devicon/github.svg"
+      />
+      <ContactSection
+        alt="LinkedIn"
+        name="@kalaiarasan-senthil-07b60b1b5"
+        head="LinkedIn"
+        link="https://www.linkedin.com/in/kalaiarasan-senthil-07b60b1b5/"
+        imgUrl="https://api.iconify.design/devicon/linkedin.svg"
+      />
+      <ContactSection
+        alt="Twitter"
+        name="@kalaiarasan_dev"
+        head="Twitter"
+        link="https://twitter.com/kalaiarasan_dev"
+        imgUrl="https://api.iconify.design/devicon/twitter.svg"
+      />
+      <ContactSection
+        alt="youtube"
+        name="@boringtimessharinginfo"
+        head="YouTube"
+        link="https://www.youtube.com/channel/UCfuOtkYr943jPN5NYURYRhg"
+        imgUrl="https://api.iconify.design/logos/youtube.svg"
+      />
+    </section>
+  </main>
+</Layout>

@@ -1,0 +1,19 @@
+---
+import { Image } from "astro:assets";
+interface Props {
+  imgUrl: string;
+  head: string;
+  link: string;
+  alt: string;
+  name: string;
+}
+const { alt, imgUrl, head, link, name } = Astro.props;
+---
+
+<section class="flex col-span-6 gap-x-5 place-items-center">
+  <Image alt={alt} width={50} height={50} src={imgUrl} />
+  <section class="text-xl">
+    <h4 class="font-bold">{head}</h4>
+    <a target="_blank" class="underline text-primary" href={link}>{name}</a>
+  </section>
+</section>

@@ -1,0 +1,37 @@
+---
+interface Props {
+  isDark?: boolean;
+}
+const pathName = new URL(Astro.url).pathname;
+const navLinks = [
+  { route: "/myworks", name: "My Works" },
+  { route: "/about", name: "About" },
+  { route: "/stuffs-i-know", name: "Stuffs I Know" },
+  { route: "/contact", name: "Contact" },
+];
+const { isDark } = Astro.props;
+---
+
+<nav
+  class={`p-4 flex px-8 z-10 sticky top-0 shadow-md font-medium ${
+    isDark
+      ? "bg-black/50 backdrop-blur text-white"
+      : "bg-white/50 backdrop-blur"
+  }`}
+>
+  <a class={`grow max-w-3xl ${"/" === pathName ? "font-bold" : ""}`} href="/"
+    >Home</a
+  >
+  <ul class="flex justify-between grow">
+    {
+      navLinks.map((link) => (
+        <a
+          class={`${link.route === pathName ? "font-bold" : ""}`}
+          href={link.route}
+        >
+          {link.name}
+        </a>
+      ))
+    }
+  </ul>
+</nav>
