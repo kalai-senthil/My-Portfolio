@@ -31,7 +31,9 @@ const { isDark } = Astro.props;
       navLinks.map((link) => (
         <a
           class={`${
-            link.route === pathName ? "font-bold" : "hidden lg:inline-block"
+            link.route === pathName
+              ? "font-bold inline-block"
+              : "hidden lg:inline-block"
           }`}
           href={link.route}
         >
@@ -83,5 +85,5 @@ function toggleNav() {
   if (nav) {
     nav.classList.toggle("hidden");
   }
-}
+  }
 </script>
