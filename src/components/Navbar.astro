@@ -52,7 +52,9 @@ const { isDark } = Astro.props;
   <section
     id="mobileNav"
     class={`absolute transition-all hidden lg:hidden top-[100%] left-0 w-full ${
-      isDark ? "bg-black backdrop-blur text-white" : "bg-white backdrop-blur"
+      isDark
+        ? "bg-black backdrop-blur text-white"
+        : "bg-white backdrop-blur text-black"
     }`}
   >
     <ul class="flex flex-col justify-center items-center gap-y-5 py-2">
@@ -79,7 +81,6 @@ const { isDark } = Astro.props;
 function toggleNav() {
   const nav = document.getElementById("mobileNav");
   if (nav) {
-    console.log(nav.classList);
     nav.classList.toggle("hidden");
   }
 }
