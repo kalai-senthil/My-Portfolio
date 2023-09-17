@@ -11,6 +11,7 @@ const navLinks = [
   { route: "/contact", name: "Contact" },
 ];
 const { isDark } = Astro.props;
+console.log(pathName);
 ---
 
 <nav
@@ -85,5 +86,5 @@ function toggleNav() {
   if (nav) {
     nav.classList.toggle("hidden");
   }
-  }
+}
 </script>
