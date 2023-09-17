@@ -4,10 +4,10 @@ import type { ThingSchema } from "../content/config";
 function ThingMatterMost({ thing, idx }: { thing: ThingSchema; idx: number }) {
   return (
     <motion.div
-      className="w-[25rem] cursor-pointer overflow-y-visible"
+      className="col-span-12 md:col-span-6 lg:col-span-4 aspect-video cursor-pointer overflow-y-visible"
       initial={{ opacity: 0, y: 10 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ delay: idx / 10 }}
+      transition={{ delay: idx / 5 }}
     >
       <motion.video
         loop
@@ -16,7 +16,7 @@ function ThingMatterMost({ thing, idx }: { thing: ThingSchema; idx: number }) {
           e.currentTarget.volume = 0;
           e.currentTarget.play();
         }}
-        className="rounded-3xl shadow-xl p-2"
+        className="rounded-3xl w-full h-full shadow lg:shadow-xl"
         src={thing.video}
       ></motion.video>
       <section className="px-4 mt-2">

@@ -8,7 +8,7 @@ const myworks = await getEntry("myworks", "works");
 
 <Layout title="My Works">
   <Navbar />
-  <section class="max-w-[90rem] mt-5 mx-auto">
+  <section class="max-w-[90rem] p-5 mt-5 mx-auto">
     {myworks.data.map((work) => <Work {...work} />)}
   </section>
 </Layout>

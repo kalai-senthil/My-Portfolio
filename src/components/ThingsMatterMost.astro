@@ -4,9 +4,9 @@ import ThingMatterMost from "./ThingMatterMost";
 const thingsMatterMost = await getCollection("thingsMatterMost");
 ---
 
-<section class="max-w-7xl mx-auto">
+<section class="max-w-7xl mx-auto px-2 md:px-10">
   <h3 class="font-bold text-xl">some meaningful things</h3>
-  <div class="flex items-center mt-5 gap-5">
+  <div class="grid grid-cols-12 mt-5 gap-5">
     {
       thingsMatterMost.map((thing, i) => (
         <ThingMatterMost idx={i} thing={thing.data} client:load />

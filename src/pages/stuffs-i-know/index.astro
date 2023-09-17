@@ -11,20 +11,18 @@ const stuffs = await getEntry("stuffsIKnow", "stuffs");
 <Layout title="Stuff I Know">
   <Navbar isDark={true} />
   <section class="text-white bg-black">
-    <section class="max-w-7xl gap-8 columns-[5] pt-10 mx-auto">
+    <section class="max-w-7xl p-2 columns-2 md:columns-6 space-4 mx-auto">
       {
         stuffs.data.map((stuff, i) => {
           return (
             <StuffShow client:load idx={i} stuff={stuff.type}>
               <Image
                 alt={stuff.imgDes}
-                class={`w-full mb-2 h-full object-center object-contain rounded-lg`}
+                width={300}
+                height={300}
+                class={`object-center object-contain rounded-lg`}
                 src={stuff.logo}
               />
-              <p class="font-bold text-lg">{stuff.name}</p>
-              <a href={stuff.link} class="text-primary">
-                {stuff.link}
-              </a>
             </StuffShow>
           );
         })

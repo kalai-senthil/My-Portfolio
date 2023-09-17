@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 interface Props {
   isDark?: boolean;
 }
@@ -13,20 +14,25 @@ const { isDark } = Astro.props;
 ---
 
 <nav
-  class={`p-4 flex px-8 z-10 sticky top-0 shadow-md font-medium ${
+  class={`flex z-10 p-4 justify-between sticky top-0 shadow-md font-medium ${
     isDark
       ? "bg-black/50 backdrop-blur text-white"
       : "bg-white/50 backdrop-blur"
   }`}
 >
-  <a class={`grow max-w-3xl ${"/" === pathName ? "font-bold" : ""}`} href="/"
-    >Home</a
+  <a
+    class={`max-w-3xl lg:grow ${
+      "/" === pathName ? "font-bold" : "hidden lg:inline-block"
+    }`}
+    href="/">Home</a
   >
-  <ul class="flex justify-between grow">
+  <ul class="flex justify-center lg:grow lg:justify-between items-center">
     {
       navLinks.map((link) => (
         <a
-          class={`${link.route === pathName ? "font-bold" : ""}`}
+          class={`${
+            link.route === pathName ? "font-bold" : "hidden lg:inline-block"
+          }`}
           href={link.route}
         >
           {link.name}
@@ -34,4 +40,47 @@ const { isDark } = Astro.props;
       ))
     }
   </ul>
+  <Image
+    onclick={"toggleNav()"}
+    id="navToggler"
+    class={`lg:hidden cursor-pointer ${isDark ? "bg-white rounded-md" : ""}`}
+    height={20}
+    width={20}
+    alt="options"
+    src="https://api.iconify.design/ic/round-more-vert.svg"
+  />
+  <section
+    id="mobileNav"
+    class={`absolute transition-all hidden lg:hidden top-[100%] left-0 w-full ${
+      isDark ? "bg-black backdrop-blur text-white" : "bg-white backdrop-blur"
+    }`}
+  >
+    <ul class="flex flex-col justify-center items-center gap-y-5 py-2">
+      <a
+        class={`grow max-w-3xl ${"/" === pathName ? "font-bold" : ""}`}
+        href="/">Home</a
+      >
+      {
+        navLinks.map((link) => (
+          <a
+            class={`${
+              link.route === pathName ? "font-bold" : ""
+            } border-b text-center`}
+            href={link.route}
+          >
+            {link.name}
+          </a>
+        ))
+      }
+    </ul>
+  </section>
 </nav>
+<script lang="ts">
+function toggleNav() {
+  const nav = document.getElementById("mobileNav");
+  if (nav) {
+    console.log(nav.classList);
+    nav.classList.toggle("hidden");
+  }
+}
+</script>

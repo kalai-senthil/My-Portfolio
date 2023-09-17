@@ -5,10 +5,10 @@ function Hero() {
   const [showShadow, setShowShadow] = useState(false);
   const btnRef = useRef<HTMLButtonElement>(null);
   return (
-    <section className="grid my-20 place-items-center grid-cols-2">
-      <section className="flex flex-col gap-y-4">
+    <section className="grid my-10 place-items-center grid-cols-2">
+      <section className="md:pl-5 md:flex hidden flex-col col-span-2 md:col-span-1 gap-y-4">
         <motion.h2
-          className={`text-8xl col-auto text-primary font-bold ${
+          className={`text-6xl lg:text-8xl col-auto text-primary font-bold ${
             showShadow ? "text-shadow" : ""
           }`}
           animate={{ y: 0 }}
@@ -33,22 +33,22 @@ function Hero() {
           around you.
         </motion.p>
       </section>
-      <section className="col-auto flex flex-col justify-center items-center">
+      <section className="md:col-span-1 col-span-2 flex flex-col justify-center items-center">
         <motion.div
-          className="cursor-pointer"
+          className="cursor-pointer p-5"
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
           whileHover={{ scale: 1.05 }}
         >
           <img
-            className="border-primary border-[.4em] rounded-full shadow-xl"
+            className="border-primary border-[.2em] lg:border-[.4em] rounded-full shadow-xl"
             alt="me"
             src="https://lh3.googleusercontent.com/ogw/AGvuzYYdATWLe1mE5MSEgs3KlUXC7j8-ig63Y_0gw8y3zNM=s300-c-mo"
           />
         </motion.div>
-        <section className="mt-5 gap-y-2 flex flex-col justify-center items-center">
+        <section className="mt-5 md:mt-2 gap-y-2 flex flex-col justify-center items-center">
           <motion.h3
-            className="font-bold text-4xl"
+            className="font-bold text-2xl"
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ opacity: 1, y: 0 }}
           >

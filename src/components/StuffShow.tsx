@@ -7,11 +7,11 @@ function typeClass(tyy: StuffType) {
     case "sm":
       return "aspect-video";
     case "md":
-      return "aspect-[16/10]";
+      return "aspect-square";
     case "lg":
-      return "aspect-[9/16]";
+      return "aspect-video";
     case "xl":
-      return "aspect-[24/18]";
+      return "aspect-video";
     default:
       break;
   }
@@ -31,7 +31,7 @@ function StuffShow({
       whileInView={{ opacity: 1, y: 0 }}
       whileHover={{ y: -10 }}
       transition={{ delay: idx / 50 }}
-      className={`cursor-pointer p-2 w-full rounded-xl m-5 ${typeClass(stuff)}`}
+      className={`cursor-pointer my-2 w-full rounded-xl ${typeClass(stuff)}`}
     >
       {children}
     </motion.div>

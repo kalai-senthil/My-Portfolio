@@ -6,8 +6,14 @@ const { icon, info, title } = Astro.props;
 ---
 
 <section class="flex gap-2">
-  <Image alt="icon" class="object-contain" src={icon} width={50} height={50} />
-  <div class="">
+  <Image
+    alt="icon"
+    class="object-contain w-5 md:w-10"
+    src={icon}
+    width={50}
+    height={50}
+  />
+  <div class="text-sm">
     <h4 class="font-semibold text-primary">{title}</h4>
     <p class="">{info}</p>
   </div>
