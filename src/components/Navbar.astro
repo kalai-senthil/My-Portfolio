@@ -3,7 +3,9 @@ import { Image } from "astro:assets";
 interface Props {
   isDark?: boolean;
 }
-const pathName = new URL(Astro.url).pathname;
+let pathName = new URL(Astro.url).pathname;
+pathName =
+  pathName.at(-1) === "/" ? pathName.slice(0, pathName.length - 1) : pathName;
 const navLinks = [
   { route: "/myworks", name: "My Works" },
   { route: "/about", name: "About" },
@@ -11,7 +13,6 @@ const navLinks = [
   { route: "/contact", name: "Contact" },
 ];
 const { isDark } = Astro.props;
-console.log(pathName);
 ---
 
 <nav
@@ -27,7 +28,6 @@ console.log(pathName);
     }`}
     href="/">Home</a
   >
-  {pathName}
   <ul class="flex justify-center lg:grow lg:justify-between items-center">
     {
       navLinks.map((link) => (
